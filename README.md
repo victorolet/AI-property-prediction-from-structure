@@ -4,7 +4,7 @@ The repository uses a feed forward network applied to molecule Morgan Fingerprin
 
 ## Install
 
-Install the conda environment:
+Install the conda environment using container in directory:
 
 ```
 conda env create -f environment.yml
@@ -64,9 +64,9 @@ As an example, we provide a script to print the top k predictions:
 python analysis/get_top_smiles.py  --input-file  results/example_run/preds.tsv
 ```
 
-## Launching experiments with config files
+## Launching experiments with config files (automation)
 
-While it's great to run scripts one at at time and get results, we often want to launch several experiments, take a break (lunch, beach, week-long vacation, etc.), and come back to get results. Launching these should be done programatically and consistently. We provide an example launcher script that shows how to build grids of different parameter inputs for a given python script, generate commands, and launch these in one of three settings:
+While it's great to run scripts one at time and get results, we often want to launch several experiments, take a break (lunch, beach, week-long vacation, etc.), and come back to get results. Launching these should be done programatically and consistently. We provide an example launcher script that shows how to build grids of different parameter inputs for a given python script, generate commands, and launch these in one of three settings:
 
 1. Slurm  
 2. Local  

@@ -1,4 +1,4 @@
-""" Train a model.
+""" Train a model for prediction
 """
 
 import pred_ffn.train as train

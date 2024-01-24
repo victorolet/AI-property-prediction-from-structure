@@ -1,6 +1,6 @@
-""" Make predictions
+""" Make predictions of chemical structure
 """
-
+#Python modules needed
 import pred_ffn.predict as predict
 import logging
 import time
